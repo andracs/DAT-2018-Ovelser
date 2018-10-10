@@ -1,3 +1,6 @@
-# Fælles repo for Datamatikere på EASJ Næstved i 2018 
+# Method header exercise
 
-Alle fra klassen kan commite m.m. 
+Lav en fil, som indeholder methode headers for følgende:
+
+- g
+- b
