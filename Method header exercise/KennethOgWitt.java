@@ -1,4 +1,4 @@
-public class KlasseSammenProgrammering {
+public class KennethOgWitt {
     //Metode headers oevelse
     //
     public static void increaseHeat()   { // Returnerer temperatur
