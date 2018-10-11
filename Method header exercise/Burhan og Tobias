@@ -1,0 +1,91 @@
+public class Smartsensor {
+
+    String ip;
+    String serialNumber;
+
+
+    // celsius
+    double[] stored_temp = new double[] {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+
+    public double readCelsius() {
+
+        return 0.0;
+
+    }
+
+    public double readKelvin() {
+
+        return 0.0;
+
+    }
+
+
+    // celsiusOrKelvin == 1 will return kelvins, celsiusOrKelvin == 0 will return celsius
+    public double[] getLastFiveTemps( boolean celsiusOrKelvin ) {
+
+        double[] kelvins = new double[] {1, 1, 1, 1, 1};
+        double[] celsius = new double[] {2, 2, 2, 2, 2};
+
+        if(celsiusOrKelvin){
+
+            // return kelvins
+            return kelvins;
+
+        }else
+        {
+
+            // return celsius
+            return celsius;
+
+        }
+
+    }
+
+    // celsiusOrKelvin == 1 will return kelvins, celsiusOrKelvin == 0 will return celsius
+    public double[] returnLastTemp( boolean celsiusOrKelvin, int records; ){
+
+        double[] temp;
+
+        for(int i = 0; i < records; i++){
+
+            temp[i] = stored_temp[ stored_temp.length - 1 - i ];
+
+        }
+
+        /*
+        if(celsiusOrKelvin){
+
+            for(int i = 0; i < records; i++){
+
+                temp[i] = convertCelciusToKelvin(temp[i]);
+
+            }
+
+        }
+        */
+
+        return temp;
+
+    }
+
+    public void restartSensor()
+    {
+
+    }
+
+    public void update(UpdateObject info){
+
+    }
+
+    public void receiveChannelNumber(int intChannelNumber)
+    {
+
+    }
+
+
+    // constructor
+    Smartsensor(String ip, String serialNumber) {
+        this.ip = ip;
+        this.serialNumber = serialNumber;
+    }
+}
