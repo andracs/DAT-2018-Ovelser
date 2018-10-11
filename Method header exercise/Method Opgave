@@ -1,0 +1,23 @@
+La’ os øve os på at skrive metode-headers. Klassen hedder Smartsensor. Skrive metode headers (eller hele metoder),
+- som læser den nuværende temperatur ud i Celsius
+public int readCurrentTempInCelsius()
+- som læser den nuværende temperatur ud i Kelvin
+public int readCurrentTempInKelvin()
+- som returnerer de sidste 5 temperaturer,
+public int returnTemp(int a, int b, int c, int d, int e)
+- som returnerer de sidste x temperaturer
+public int returnTemp(int x)
+- som returnerer 
+public static return()
+- som genstarter måleren
+public rebootMonitorDevice()
+- som sender en Opdateringsobjekt til måleren
+public sendUpdateObject()
+- som modtager en kanalnummer (int) for kommunikation
+public int receiveChannelNumber()
+- constructoren skal tage imod smartsensorens IP-nummer eller serienummer (int), eller begge dele.
+public void SmartSensor(String ip, int serialNumber)
+or
+public void SmartSensor(String ip)
+or
+public void SmartSensor(int serialNumber)
