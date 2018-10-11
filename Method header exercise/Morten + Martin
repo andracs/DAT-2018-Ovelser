@@ -1,0 +1,58 @@
+public class SmartSensor {
+    public static void main(String[] args) {
+
+    }
+
+    public void readTempCelsius(double tempCelsius) { // som læser den nuværende temperatur ud i Celsius
+
+    }
+
+    public void readTempKelvin(double tempKelvin) { // som læser den nuværende temperatur ud i Kelvin
+
+    }
+
+    public double[] lastFiveTempe(double[] temperatures) { // som returnerer de sidste 5 temperaturer,
+
+        double[] lastFive = new double[5];
+
+        for (int i = temperatures.length - 5, j = 0; i < temperatures.length; i++, j++) {
+            lastFive[j] = temperatures[i];
+        }
+
+        return lastFive;
+    }
+
+    public double[] lastXTempe(double[] temperatures, int x) { // som returnerer de sidste x temperaturer
+
+    }
+
+    public String nothing (String[] nothing) { // som returnerer
+
+    }
+
+    public void restart() { // som genstarter måleren
+
+    }
+
+    public void sendUpdateObject(String updateObject) { // som sender en Opdateringsobjekt til måleren
+
+    }
+
+    public void receiveChannelNumber (int channelNumber) { // som modtager en kanalnummer (int) for kommunikation
+
+    }
+
+    // Next 3 headers: constructoren skal tage imod smartsensorens IP-nummer eller serienummer (int), eller begge dele.
+
+    public SmartSensor (String ipNumber) {
+    }
+
+    public SmartSensor (int serialNumber) {
+    }
+
+    public SmartSensor (String ipNumber, int serialNumber) {
+    }
+
+
+
+}
