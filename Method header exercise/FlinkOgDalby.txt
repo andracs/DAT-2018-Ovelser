@@ -1,0 +1,35 @@
+La’ os øve os på at skrive metode-headers. Klassen hedder Smartsensor. Skrive metode headers (eller hele metoder),
+
+dobule[] temp = new double[x]
+read5Temp(temperatures)
+temp = 
+som læser den nuværende temperatur ud i Celsius
+public double readTemp(){...}
+
+som læser den nuværende temperatur ud i Kelvin
+public double kelvin(double tempCelcius){...}
+
+som returnerer de sidste 5 temperaturer
+public double[] read5Temp(double[] temperatures){...}
+
+som returnerer de sidste x temperaturer
+public double[] readXTemp (int x){...}
+
+som genstarter måleren
+public void restart(){...}
+
+som sender et Opdateringsobjekt til måleren
+public void update(double temp){...}
+
+som modtager en kanalnummer (int) for kommunikation
+public void channel(int channelid){...}
+
+constructoren skal tage imod smartsensorens IP-nummer eller serienummer (int), eller begge dele.
+public static void main(String[] args) {
+    int ipAddress = 35131535;
+    int serialNumber  = 132125115412;
+    Thermostat megaSmart = new Thermostat(ipAddress, serialNumber);
+}
+
+public Thermostat(int ipAddress, int serialNumber) {
+}
