@@ -1,0 +1,34 @@
+public Class Smartsensor{
+
+	public static void main(String[] args){
+
+
+	}
+	
+	public double readTemp(String type){
+		return;
+	}
+
+	public double[] receiveLastTemp(int count){
+		return;
+	}
+
+	public void restartBoard(a,b){
+		System.out.print("Restarting...");
+	}
+
+	public void sendUpdateToBoard(){
+		System.out.print("Update sent..");	
+	}
+
+	public int receiveChannel(String channelNumber){
+		return;
+	}
+
+	public void Smartsensor(int ip, int serial){}
+	public void Smartsensor(int ip){}
+	public void Smartsensor(int serial){}
+
+
+
+}
