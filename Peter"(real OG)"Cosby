@@ -1,0 +1,32 @@
+# Method header exercise
+
+ La’ os øve os på at skrive metode-headers. Klassen hedder Smartsensor. Skrive metode headers (eller hele metoder),
+ - som læser den nuværende temperatur ud i Celsius
+ public double getTempCelsius()
+ 
+ - som læser den nuværende temperatur ud i Kelvin
+public double getTempKelvin()
+
+ - som returnerer de sidste 5 temperaturer,
+public double getLastFiveTemps()
+
+ - som returnerer de sidste x temperaturer
+public double getXNumberOfTemps(int x)
+
+ - som returnerer 
+'- som retunerer' is not recognized as an internal or external command,
+operable program or batch file.
+
+ - som genstarter måleren
+public void resetMeter()
+
+ - som sender en Opdateringsobjekt til måleren
+public void updateMeter(Opdatering update)
+
+ - som modtager en kanalnummer (int) for kommunikation
+public int channelNumber()
+
+ - constructoren skal tage imod smartsensorens IP-nummer eller serienummer (int), eller begge dele.
+public void SmartSensor(int ipNumber, int serieNumber)
+public void SmartSensor(int serieNumber)
+public void SmartSensor(int ipNumber)
