@@ -17,4 +17,4 @@ public void updateSensor(file Object)
 - som modtager en kanalnummer (int) for kommunikation
 public void channelNumber(int var)
 - constructoren skal tage imod smartsensorens IP-nummer eller serienummer (int), eller begge dele.
-public static void smartSensor()
+public static void smartSensor(int ip, int serial)
